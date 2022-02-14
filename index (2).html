@@ -1,188 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Material+Icons|Source+Code+Pro|Roboto&display=swap"
-        rel="stylesheet"> -->
-    <title>Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+	<meta name="author" content="David Grzyb">
+    <meta name="description" content="">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+   
 </head>
 
-<body class="bg-pink-100">
-    <nav x-data="{show:false}" class="flex flex-row bg-blue-800 p-4 ">
-        <div>
-            <a href="#" class="text-white text-xl">
-                LOGO
-            </a>
-        </div>
-
-        <div class="block md:hidden ">
-            <button @click="show=!show"
-                class="flex items-center px-3 py-2 border rounded text-gray-100 border-gray-200 hover:text-white hover:border-white">
-                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <title>Menu</title>
-                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                </svg>
-            </button>
-        </div>
-        <div @click.away="show = false" :class="{ 'block': show, 'hidden': !show }"
-            class="w-full block flex-grow md:flex md:justify-end md:w-auto">
-            <div>
-                <a href="#"
-                    class="block md:inline-block text-sm px-4 py-2 leading-none rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 md:mt-0">Login</a>
-                <a href="#"
-                    class="block md:inline-block text-sm px-4 py-2 leading-none rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 md:mt-0">Register</a>
-
-            </div>
-        </div>
-    </nav>
-
-    <form action="">
-        <div class="flex w-3/4 mx-auto my-8 space-x-96 px-4 space-y-4 ">
-
-            <div class="flex justify-center flex-col mx-auto ">
-
-            
-                <div class="flex space-x-4 ">
-
-                    <div class="lg:w-1/2 mb-3 lg:mb-2 mx-1 ">
-                        
-                        
-                        <div class="px-1 ">
-                            <label>First Name</label>
-                            <input type='text' class="w-full mt-1 px-2 py-1 border rounded-lg  " />
-                        </div>
-                    </div>
 
 
-
-
-                    <div class="lg:w-1/2  mb-3 lg:mb-2 mx-1">
-                        <div class="px-1">
-                            <label>Last Name</label>
-                            <input type='text' class="w-full mt-1 px-2 py-1 border rounded-lg " />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex space-x-4">
-
-                    <div class="lg:w-1/2  mb-3 lg:mb-2 mx-1">
-                        <div class="px-1">
-                            <label>Email id</label>
-                            <input type='email' class="w-full mt-1 px-2 py-1 border rounded-lg " />
-                        </div>
-                    </div>
-
-
-                    <div class="lg:w-1/2  mb-3 lg:mb-2 mx-1">
-                        <div class="px-1">
-                            <label >Phone no</label>
-                            <input type='text' class=" phn_no w-full mt-1 px-2 py-1 border rounded-lg " />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex space-x-4">
-                    <div class="lg:w-1/2  mb-3 lg:mb-2 mx-1">
-                        <div class="px-1">
-                            <label>DOB</label>
-                            <input type='date' class="w-full mt-1 px-2 py-1 border rounded-lg " />
-                        </div>
-                    </div>
-                    <div class="flex items-center">
-
-                        <label class="block mb-2 ">Select Gender</label>
-                    </div>
-                    <div class="flex">
-
-                        <div class="flex items-center mb-2 mr-4">
-                            <input type="radio" id="radio-example-1" name="radio"
-                                class="h-4 w-4 text-gray-700 px-3 py-3 border rounded mr-2">
-                            <label for="radio-example-1" class="text-gray-600">Male</label>
-                        </div>
-                        <div class="flex items-center mb-2">
-                            <input type="radio" id="radio-example-2" name="radio"
-                                class="h-4 w-4 text-gray-700 px-3 py-3 border rounded mr-2">
-                            <label for="radio-example-2" class="text-gray-600">Female</label>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-            <!-- <select class="w-full border bg-white rounded px-3 py-2 outline-none text-gray-700" multiple>
-                <option class="py-1">Option 1</option>
-                <option class="py-1">Option 2</option>
-                <option class="py-1">Option 3</option>
-                <option class="py-1">Option 4</option>
-            </select> -->
-
-        </div>
-
-        <div class="flex mx-auto w-1/4 flex-col py-12">
-            <div class="">
-
-            </div>
-            <div class="flex">
-
-                <div class="flex items-center mx-auto">
-                    <label for="">Select Roles :</label>
-                </div>
-                <div class=" mx-auto  py-4">
-                    <!-- <label for="">Select Role:</label> -->
-                    <select class="w-full border bg-white rounded px-3 py-2 outline-none">
-                        <option class="py-1">Student</option>
-                        <option class="py-1">Content Creator</option>
-                        <option class="py-1">Content Approval</option>
-                    </select>
+<body class="w-full h-full"   style="background-image: url('http://surl.li/bjgde');" style="font-family:'Lato',sans-serif;">
     
-                </div>
+ 
+        <nav x-data="{show:false}" class="flex flex-row bg-blue-800 p-4 " style="width: 100%;">
+            <div>
+                <a href="#" class="text-white text-xl">
+                    LOGO
+                </a>
             </div>
-            
+        </nav>
+    
+    
 
-            <div class=" flex   mb-3 lg:mb-2 mx-auto py-7 ">
+    <main class="bg-white max-w-lg mx-auto p-8 md:p-12 my-10 rounded-lg shadow-2xl">
+        <!--<a href="#">
+            <h1 class="text-4xl font-bold text-black text-center">QUIZ</h1>
+        </a>-->
+        <section>
+            <h3 class="font-bold text-2xl">Welcome to Login Page</h3>
+            <p class="text-gray-600 pt-2">Sign in to your account.</p>
+        </section>
 
-                <div class="flex items-center space-x-6 mx-4 pr-7">
-                    <label>User Name :</label>
-
+        <section class="mt-10">
+            <form class="flex flex-col" method="POST" action="#">
+                <div class="mb-6 pt-3 rounded bg-gray-200">
+                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="email" type="email">Email</label>
+                    <input type="text" id="email" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-blue-700 transition duration-500 px-3 pb-3">
                 </div>
-                <div class="  px-1">
-                    <input type='text' placeholder="Enter User Name" class="w-full mt-1 px-2 py-1 border rounded-lg " />
+                <div class="mb-6 pt-3 rounded bg-gray-200">
+                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="password">Password</label>
+                    <input type="password" id="password" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-blue-700 transition duration-500 px-3 pb-3">
                 </div>
-            </div>
-
-            <div class=" flex  mb-3 lg:mb-2 mx-auto py-3">
-                <div class="flex items-center space-x-6 mx-4 pr-9">
-
-
-                    <label>Password :</label>
+                <div class="flex justify-end">
+                    <a href="#" class="text-sm text-blue-500 hover:text-blue-700 hover:underline mb-6">Forgot your password?</a>
                 </div>
-                <div class="px-1">
-                    <input type='password' placeholder="Enter password" class="w-full mt-1 px-2 py-1 border rounded-lg " />
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200" style="margin-bottom: 10px; " type="submit">Sign In</button>
+                <p class="text-gray-400 text-center text-inherit">OR</p>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200" style="margin-top: 10px;" type="submit">Join with code</button>
+                <div class="max-w-lg mx-auto text-center mt-12 mb-6">
+                    <p class="text-black">Don't have an account? <a href="#" class="font-bold hover:underline">Sign up</a>.</p>
                 </div>
-            </div>
+            </form>
 
-            <div class="flex  mb-3 lg:mb-2 mx-auto py-3">
-                <div class="flex items-center space-x-6 mx-4 pl-1">
+        </section>
+    </main>
 
-
-                    <label>Confirm password :</label>
-                </div>
-                <div class="px-1">
-                    <input type='password' placeholder="Confirm Password" class="w-full mt-1 px-2 py-1 border rounded-lg " />
-                </div>
-            </div>
-
-        </div>
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full flex mx-auto my-4">
-            Submit
-          </button>
-    </form>
+    
 
     <footer class="block bg-black h-20 text-white mx-auto ">
 
@@ -196,14 +75,9 @@
             </div>
             <div class=" text-right m-auto">
                 <a href="#">Follow us</a>
-                <div class="flex ">
-                    <!-- <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"alt=""> -->
-                </div>
+                
             </div>
         </div>
     </footer>
-
-
 </body>
-
 </html>
