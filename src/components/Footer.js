@@ -9,7 +9,7 @@ function footer() {
 
             <div className="p-5  m-auto">
 
-                <a href="/">Terms & Conditions Privacy Policy</a>
+                <a href="/">Terms & Conditions Privacy Policy..</a>
                 &copy;
             </div>
             <div className=" text-right m-auto">
