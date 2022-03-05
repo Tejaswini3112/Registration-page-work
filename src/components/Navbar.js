@@ -4,7 +4,7 @@ function header() {
     return (
         
     <>
-    <nav className='flex flex-row bg-blue-800 p-4'>
+    <nav className='flex flex-row bg-gray-800 p-4'>
         <div className='text-white'>
         <a href="/">
             LOGO
