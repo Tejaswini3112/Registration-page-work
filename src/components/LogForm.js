@@ -8,7 +8,7 @@ const LogForm = () =>
         <form>
             
 
-             <h2>Welcome To The Login Page</h2>
+             <h3>Welcome To The Login Page</h3>
                 <p>Sign In to your Account</p>
                 <div className="ui divider"></div>
                 <div className="ui form">
@@ -25,7 +25,7 @@ const LogForm = () =>
                     <p>OR</p>
                 <button className="fluid ui button blue">Join With Code</button>
 
-               <span>Don't Have An Account? <a href="#" className='sign'>Sign up </a></span>
+               <span className='span'>Don't Have An Account? <a href="#" className='sign'>Sign up </a></span>
                
 
 
