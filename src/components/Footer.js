@@ -4,7 +4,12 @@ const Footer = props =>
 {
     return(
 
-        <div className="footer"><a>Terms and Conditions Privacy Policy © </a></div>
+        <div className="footer">
+            <a href="#" className="footer">Terms and Conditions Privacy Policy © </a>
+            <a href="#" className="follow">Follow Us</a>
+    
+        
+        </div>
     )
 }
 
