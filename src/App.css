@@ -1,3 +1,8 @@
+
+
+/* ---------------CSS CODE BELOW FOR LOGIN FORM----------------
+--------------- (*)-> FOR EACH AND EVERY ELEMENT AND BODY FOR THE BACKGROUND IMAGE ------------ */
+
 *{
   margin: 0;
   padding: 0;
@@ -14,6 +19,8 @@ body{
   background-size: cover;
 }
 
+/* ------------------ (h3) -> WELCOME TO THE LOGIN PAGE INSIDE FORM/CARD-------------- */
+
 h3 {
   
   
@@ -22,6 +29,7 @@ h3 {
 
 }
 
+/* ------------------LOGFORM.JS STYLING OF FORM/CARD-------------------- */
 
 .container{
  
@@ -45,6 +53,7 @@ h3 {
 
 }
 
+/* ---------------------FOR INPUT FIELDS OF EMAIL AND PASSWORD AND FORGOT AND SIGNUP---------------- */
 .field {
   padding: 20px;
   border-radius: 20px;
@@ -64,13 +73,19 @@ h3 {
   
 }
 
-pre {
+.span{
+  font-size: 15px;
+  padding-left: 15px; 
+}
+
+/* pre {
   width: 70%;
   color: #fff;
   font-size: larger;
-}
+} */
 
 
+/* -----------------SIGNIN BUTTON AND JOIN WITH CODE BUTTON STYLING----------------------- */
 
 .button1{
   background-color: #0474d6 !important;
@@ -114,37 +129,49 @@ p{
 }
 
 
+
+/* -----------------HEARDER AND FOOTER STYLING------------------------- */
 .header {
   background-color:	#5a5a5a;
   height: 50px;
   padding: 10px;
   color: #fff;
   font-weight: bold;
-
-
-  
+  width: 100%;
+  top:0;
 }
 
 .footer {
   background-color: rgb(8, 8, 8);
   height: 80px;
-  padding: 10px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+
+/* --------------------TERMS AND CONDITIONS & FOLLOW US STYLING OF FOOTER BELOW------ */
+
+.terms{
+  
+  padding: 15px;
   color: #fff;
   text-decoration: none;
-  padding-left: 20px;
+  white-space: nowrap;
+  
 }
 
 .follow{
   color: #fff;
   text-decoration: none;
+  display: flex;
+  padding: 15px;
   padding-left: 1000px;
-
-}
-
-.span{
-  font-size: 15px;
+  white-space: nowrap;
   
-  padding-left: 15px; 
+
 }
+
+
 
 
